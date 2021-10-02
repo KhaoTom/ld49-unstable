@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1027398386}
-  initialPitch: 0.29
+  initialPitch: 0.5
   driftDuration: 8.3
   drift:
     serializedVersion: 2
@@ -888,7 +888,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  stableDuration: 5
+  stableDuration: 3
 --- !u!1 &2105036661
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +922,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4413fc098bc5674409d84293f74c472b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookCamera: {fileID: 0}
+  characterController: {fileID: 0}
+  capsuleMeshRenderer: {fileID: 0}
+  canMove: 1
+  followTransform: {fileID: 0}
+  lookSensitivity: 2
+  moveSpeed: 4
+  gravity: -9
+  shotCooldown: 1
 --- !u!143 &2105036663
 CharacterController:
   m_ObjectHideFlags: 0

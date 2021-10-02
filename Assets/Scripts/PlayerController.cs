@@ -2,16 +2,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Camera lookCamera;
-    private CharacterController characterController;
-    private MeshRenderer capsuleMeshRenderer;
+    public Camera lookCamera;
+    public CharacterController characterController;
+    public MeshRenderer capsuleMeshRenderer;
 
-    private bool canMove = true;
-    private Transform followTransform;
+    public bool canMove = true;
+    public Transform followTransform;
 
-    private float lookSensitivity = 2;
-    private float moveSpeed = 4;
-    private float gravity = -9;
+    public float lookSensitivity = 2;
+    public float moveSpeed = 4;
+    public float gravity = -9;
+
+    public float shotCooldown = 1;
+
+    private float shotCooldownRemaining;
 
     private Vector2 lookAbsolute;
     private Vector2 lookSmooth;
@@ -101,6 +105,19 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateShooting()
     {
-
+        if (shotCooldownRemaining <= 0 && Input.GetButtonDown("Fire1"))
+        {
+            shotCooldownRemaining = shotCooldown;
+            RaycastHit hit;
+            var hitSomething = Physics.Raycast(lookCamera.transform.position, lookCamera.transform.forward, out hit);
+            if (hitSomething)
+            {
+                hit.transform.GetComponent<UnstableTone>()?.ResetStability();
+            }
+        }
+        else
+        {
+            shotCooldownRemaining -= Time.deltaTime;
+        }
     }
 }
