@@ -3,7 +3,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-    public GameObject shotPrefab;
+    public GameObject shotHitPrefab;
+    public GameObject shotTrailPrefab;
     public Image shotCooldownImage;
 
     // Set automatically
@@ -126,12 +127,15 @@ public class PlayerController : MonoBehaviour
         {
             shotCooldownRemaining = shotCooldown;
             shotCooldownImage.fillAmount = 0;
+
+            Instantiate(shotTrailPrefab, lookCamera.transform.position, lookCamera.transform.rotation);
+
             RaycastHit hit;
             var hitSomething = Physics.Raycast(lookCamera.transform.position, lookCamera.transform.forward, out hit);
             if (hitSomething)
             {
                 hit.transform.GetComponent<UnstableTone>()?.ResetStability();
-                Instantiate(shotPrefab, hit.transform.position, Quaternion.identity);
+                Instantiate(shotHitPrefab, hit.transform.position, Quaternion.identity);
             }
         }
         else if (shotCooldownRemaining > 0)

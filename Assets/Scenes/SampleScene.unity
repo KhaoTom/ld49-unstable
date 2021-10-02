@@ -998,7 +998,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4413fc098bc5674409d84293f74c472b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 2921758797785160032, guid: 5982cee48b069a94cacf3e268e65cfe8, type: 3}
+  shotHitPrefab: {fileID: 2921758797785160032, guid: 5982cee48b069a94cacf3e268e65cfe8, type: 3}
+  shotTrailPrefab: {fileID: 2921758797785160032, guid: 32de29a4d691a6d48948ed93e68c5887, type: 3}
   shotCooldownImage: {fileID: 1468033882}
   lookCamera: {fileID: 0}
   characterController: {fileID: 0}
