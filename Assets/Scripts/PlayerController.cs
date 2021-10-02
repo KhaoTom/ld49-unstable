@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
         UpdateCharacterMove();
         //UpdateCharacterGravity();
         UpdateCursorLock();
+
+        UpdateShooting();
     }
 
     private void UpdateCameraLook()
@@ -95,5 +97,10 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+    }
+
+    private void UpdateShooting()
+    {
+
     }
 }
