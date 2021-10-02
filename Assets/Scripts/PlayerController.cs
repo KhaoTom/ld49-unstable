@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
     public Camera lookCamera;
     public CharacterController characterController;
     public MeshRenderer capsuleMeshRenderer;
+    public GameObject shotPrefab;
 
     public bool canMove = true;
     public Transform followTransform;
@@ -125,6 +126,7 @@ public class PlayerController : MonoBehaviour
             if (hitSomething)
             {
                 hit.transform.GetComponent<UnstableTone>()?.ResetStability();
+                Instantiate(shotPrefab, hit.transform.position, Quaternion.identity);
             }
         }
         else
