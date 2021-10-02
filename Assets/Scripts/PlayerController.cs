@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject shotHitPrefab;
     public GameObject shotTrailPrefab;
-    public Image shotCooldownImage;
 
     public bool CanShoot { get; set; }
 
@@ -26,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public float movementLimit = 3;
     public Vector3 initialPosition = Vector3.zero;
 
-    private float shotCooldownRemaining;
+    public float shotCooldownRemaining;
 
     private Vector2 lookAbsolute;
     private Vector2 lookSmooth;
@@ -129,20 +127,15 @@ public class PlayerController : MonoBehaviour
         if (CanShoot && shotCooldownRemaining <= 0 && Input.GetButtonDown("Fire1"))
         {
             shotCooldownRemaining = shotCooldown;
-            shotCooldownImage.fillAmount = 0;
 
             Instantiate(shotTrailPrefab, lookCamera.transform.position + lookCamera.transform.forward, lookCamera.transform.rotation);
         }
         else if (shotCooldownRemaining > 0)
         {
             shotCooldownRemaining -= Time.deltaTime;
-            if (shotCooldownRemaining <= 0)
+            if (shotCooldownRemaining < 0)
             {
-                shotCooldownImage.fillAmount = 1;
-            }
-            else
-            {
-                shotCooldownImage.fillAmount = 1 - shotCooldownRemaining;
+                shotCooldownRemaining = 0;
             }
         }
     }
