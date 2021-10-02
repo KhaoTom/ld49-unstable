@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
 
     public float shotCooldown = 1;
 
+    public float movementLimit = 3;
+    public Vector3 initialPosition = Vector3.zero;
+
     private float shotCooldownRemaining;
 
     private Vector2 lookAbsolute;
@@ -32,6 +35,8 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        transform.position = initialPosition;
+
         targetDirection = lookCamera.transform.localRotation.eulerAngles;
         targetCharacterDirection = transform.localRotation.eulerAngles;
 
@@ -84,9 +89,16 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        var moveInput = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime, Input.GetAxis("Vertical") * Time.deltaTime) * moveSpeed;
-        var move = transform.right * moveInput.x + transform.forward * moveInput.y;
+        var moveInput = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime, 0) * moveSpeed;
+        var move = Vector3.right * moveInput.x;
         characterController.Move(move);
+
+        var x = Mathf.Clamp(transform.position.x, initialPosition.x - movementLimit, initialPosition.x + movementLimit);
+        transform.position = new Vector3(
+                x,
+                transform.position.y,
+                transform.position.z
+                );
     }
 
     private void UpdateCursorLock()
