@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
             shotCooldownRemaining = shotCooldown;
             shotCooldownImage.fillAmount = 0;
 
-            Instantiate(shotTrailPrefab, lookCamera.transform.position, lookCamera.transform.rotation);
+            Instantiate(shotTrailPrefab, lookCamera.transform.position + lookCamera.transform.forward, lookCamera.transform.rotation);
         }
         else if (shotCooldownRemaining > 0)
         {
