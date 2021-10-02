@@ -43,4 +43,9 @@ public class UnstableTone : MonoBehaviour
         driftElapsedTime = 0;
         currentStableDuration = stableDuration + Random.Range(-(stableDuration / 2), stableDuration / 2);
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        ResetStability();
+    }
 }

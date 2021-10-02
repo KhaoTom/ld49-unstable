@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4517629613419488698}
   - component: {fileID: 4517629613419488699}
   - component: {fileID: 4517629613419488695}
-  m_Layer: 0
+  - component: {fileID: 3470091951625004662}
+  m_Layer: 7
   m_Name: Tone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,6 +193,27 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   stableDuration: 3
+--- !u!114 &3470091951625004662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4517629613419488696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399b73ba3503a0d42a88df8af572b4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathController: {fileID: 0}
+  moveSpeed: 3
+  rotationSpeed: 180
+  nodes: []
+  currentTargetId: -1
+  completed: 0
+  onCompletedPath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4517629614336589325
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4517629614336589324}
   - component: {fileID: 4517629614336589327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}

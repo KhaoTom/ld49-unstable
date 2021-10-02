@@ -129,14 +129,6 @@ public class PlayerController : MonoBehaviour
             shotCooldownImage.fillAmount = 0;
 
             Instantiate(shotTrailPrefab, lookCamera.transform.position, lookCamera.transform.rotation);
-
-            RaycastHit hit;
-            var hitSomething = Physics.Raycast(lookCamera.transform.position, lookCamera.transform.forward, out hit);
-            if (hitSomething)
-            {
-                hit.transform.GetComponent<UnstableTone>()?.ResetStability();
-                Instantiate(shotHitPrefab, hit.transform.position, Quaternion.identity);
-            }
         }
         else if (shotCooldownRemaining > 0)
         {
