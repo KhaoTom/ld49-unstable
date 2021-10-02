@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UnstableTone : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class UnstableTone : MonoBehaviour
 
     [Range(1f, 10f)]
     public float stableDuration = 5;
+
+    public UnityEvent onHit;
 
     private float currentStableDuration = 0;
     private float driftElapsedTime;
@@ -49,5 +52,6 @@ public class UnstableTone : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         ResetStability();
+        onHit.Invoke();
     }
 }

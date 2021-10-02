@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public GameObject shotTrailPrefab;
     public Image shotCooldownImage;
 
+    public bool CanShoot { get; set; }
+
     // Set automatically
     public Camera lookCamera;
     public CharacterController characterController;
@@ -37,6 +39,7 @@ public class PlayerController : MonoBehaviour
         capsuleMeshRenderer = GetComponent<MeshRenderer>();
         lookCamera = GetComponentInChildren<Camera>();
         capsuleMeshRenderer.enabled = false;
+        CanShoot = true;
     }
 
     private void Start()
@@ -123,7 +126,7 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateShooting()
     {
-        if (shotCooldownRemaining <= 0 && Input.GetButtonDown("Fire1"))
+        if (CanShoot && shotCooldownRemaining <= 0 && Input.GetButtonDown("Fire1"))
         {
             shotCooldownRemaining = shotCooldown;
             shotCooldownImage.fillAmount = 0;
