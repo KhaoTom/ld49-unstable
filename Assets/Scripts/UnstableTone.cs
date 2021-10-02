@@ -21,6 +21,8 @@ public class UnstableTone : MonoBehaviour
     private float driftElapsedTime;
     private float stabilityElapsedTime;
 
+    public float Instability { get => Mathf.Abs(initialPitch - audioSource.pitch); }
+
     private void Start()
     {
         ResetStability();
