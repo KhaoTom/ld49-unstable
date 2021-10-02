@@ -1,11 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public GameObject shotPrefab;
+    public Image shotCooldownImage;
+
+    // Set automatically
     public Camera lookCamera;
     public CharacterController characterController;
     public MeshRenderer capsuleMeshRenderer;
-    public GameObject shotPrefab;
 
     public bool canMove = true;
     public Transform followTransform;
@@ -121,6 +125,7 @@ public class PlayerController : MonoBehaviour
         if (shotCooldownRemaining <= 0 && Input.GetButtonDown("Fire1"))
         {
             shotCooldownRemaining = shotCooldown;
+            shotCooldownImage.fillAmount = 0;
             RaycastHit hit;
             var hitSomething = Physics.Raycast(lookCamera.transform.position, lookCamera.transform.forward, out hit);
             if (hitSomething)
@@ -129,9 +134,17 @@ public class PlayerController : MonoBehaviour
                 Instantiate(shotPrefab, hit.transform.position, Quaternion.identity);
             }
         }
-        else
+        else if (shotCooldownRemaining > 0)
         {
             shotCooldownRemaining -= Time.deltaTime;
+            if (shotCooldownRemaining <= 0)
+            {
+                shotCooldownImage.fillAmount = 1;
+            }
+            else
+            {
+                shotCooldownImage.fillAmount = 1 - shotCooldownRemaining;
+            }
         }
     }
 }
