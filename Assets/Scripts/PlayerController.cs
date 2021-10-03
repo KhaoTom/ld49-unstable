@@ -96,8 +96,8 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        var moveInput = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime, 0) * moveSpeed;
-        var move = Vector3.right * moveInput.x;
+        var moveInput = new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime, Input.GetAxis("Vertical") * Time.deltaTime) * moveSpeed;
+        var move = Vector3.right * moveInput.x + transform.forward * moveInput.y;
         characterController.Move(move);
 
         var x = Mathf.Clamp(transform.position.x, initialPosition.x - movementLimit, initialPosition.x + movementLimit);
