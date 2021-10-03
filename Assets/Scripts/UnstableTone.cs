@@ -6,6 +6,9 @@ using UnityEngine.Events;
 public class UnstableTone : MonoBehaviour
 {
     public AudioSource audioSource;
+    public ParticleSystem mainParticle;
+    public ParticleSystemRenderer mainParticleRenderer;
+    public Gradient particleColorDrift;
 
     [Range(0.1f, 4f)]
     public float initialPitch = 1;
@@ -36,9 +39,13 @@ public class UnstableTone : MonoBehaviour
         stabilityElapsedTime += Time.deltaTime;
         if (stabilityElapsedTime > currentStableDuration)
         {
-            driftElapsedTime = (driftElapsedTime + Time.deltaTime) % driftDuration;
-            audioSource.pitch = initialPitch + drift.Evaluate(driftElapsedTime / driftDuration) * driftScale;
+            driftElapsedTime = driftElapsedTime + Time.deltaTime;
         }
+
+        audioSource.pitch = initialPitch + drift.Evaluate(driftElapsedTime % driftDuration / driftDuration) * driftScale;
+        //var module = mainParticle.main;
+        //module.startColor = particleColorDrift.Evaluate(Mathf.Clamp01(driftElapsedTime));
+        mainParticleRenderer.material.color = particleColorDrift.Evaluate(Mathf.Clamp01(driftElapsedTime));
     }
 
     public void ResetStability()
