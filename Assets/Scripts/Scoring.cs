@@ -9,17 +9,18 @@ public class Scoring : MonoBehaviour
     public Text scoreText;
     public Text timerText;
     public float duration;
+    public UnityEvent onStart;
     public UnityEvent<Score> onCompleteEvent;
 
     private float timeRemaining;
     UnstableTone[] tones;
     float instability;
     int hits;
+    bool started = false;
 
-    void Start()
+    private void Start()
     {
         timeRemaining = duration;
-        tones = FindObjectsOfType<UnstableTone>();
         foreach (var tone in tones)
         {
             tone.onHit.AddListener(() => hits++);
@@ -30,8 +31,14 @@ public class Scoring : MonoBehaviour
         timerText.text = timeRemaining.ToString();
     }
 
-    void Update()
+    private void Update()
     {
+        if (!started)
+        {
+            started = true;
+            onStart.Invoke();
+        }
+
         timeRemaining -= Time.deltaTime;
         foreach (var tone in tones)
         {
@@ -45,6 +52,23 @@ public class Scoring : MonoBehaviour
         {
             onCompleteEvent.Invoke(new Score() { instability = instability, hits = hits });
             this.enabled = false;
+        }
+    }
+
+    private void OnEnable()
+    {
+        tones = FindObjectsOfType<UnstableTone>();
+        foreach (var tone in tones)
+        {
+            tone.hold = false;
+        }
+    }
+
+    private void OnDisable()
+    {
+        foreach (var tone in tones)
+        {
+            tone.hold = true;
         }
     }
 }

@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         capsuleMeshRenderer = GetComponent<MeshRenderer>();
         lookCamera = GetComponentInChildren<Camera>();
         capsuleMeshRenderer.enabled = false;
-        CanShoot = true;
+        CanShoot = false;
     }
 
     private void Start()

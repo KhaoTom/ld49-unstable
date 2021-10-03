@@ -29,6 +29,8 @@ public class UnstableTone : MonoBehaviour
 
     public float Instability { get => Mathf.Abs(initialPitch - audioSource.pitch); }
 
+    public bool hold = true;
+
     private void Start()
     {
         ResetStability();
@@ -36,21 +38,23 @@ public class UnstableTone : MonoBehaviour
 
     private void Update()
     {
-        stabilityElapsedTime += Time.deltaTime;
-        if (stabilityElapsedTime > currentStableDuration)
+        if (!hold)
         {
-            driftElapsedTime = driftElapsedTime + Time.deltaTime;
-        }
+            stabilityElapsedTime += Time.deltaTime;
+            if (stabilityElapsedTime > currentStableDuration)
+            {
+                driftElapsedTime = driftElapsedTime + Time.deltaTime;
+            }
 
-        audioSource.pitch = initialPitch + drift.Evaluate(driftElapsedTime % driftDuration / driftDuration) * driftScale;
-        //var module = mainParticle.main;
-        //module.startColor = particleColorDrift.Evaluate(Mathf.Clamp01(driftElapsedTime));
-        mainParticleRenderer.material.color = particleColorDrift.Evaluate(Mathf.Clamp01(driftElapsedTime));
+            audioSource.pitch = initialPitch + drift.Evaluate(driftElapsedTime % driftDuration / driftDuration) * driftScale;
+            mainParticleRenderer.material.color = particleColorDrift.Evaluate(Mathf.Clamp01(driftElapsedTime));
+        }
     }
 
     public void ResetStability()
     {
         audioSource.pitch = initialPitch;
+        mainParticleRenderer.material.color = particleColorDrift.Evaluate(0);
         stabilityElapsedTime = 0;
         driftElapsedTime = 0;
         currentStableDuration = stableDuration + Random.Range(-(stableDuration / 2), stableDuration / 2);
