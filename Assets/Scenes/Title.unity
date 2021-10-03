@@ -1012,26 +1012,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[0].text
-      value: Tones of the Universe
+      value: 'Welcome to "Tones of the World".
+
+
+        Click the left mouse button
+        to continue.'
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[1].text
-      value: Ludum Dare # 49
+      value: A game made for the Ludum Dare # 49
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[2].text
-      value: 'Made by Edwin!
+      value: 'It was made by Edwin!
 
 
         https://khaotom.itch.io/'
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[3].text
-      value: This is a special place.
+      value: If you need to quit the game press Escape key a couple times.
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[4].text
@@ -1075,7 +1079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[3].speaker
-      value: toney
+      value: none
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[4].speaker
@@ -1119,7 +1123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[3].expression
-      value: friendly2
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[4].expression
