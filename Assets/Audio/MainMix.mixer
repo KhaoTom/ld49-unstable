@@ -35,6 +35,7 @@ AudioMixerGroupController:
   m_GroupID: 6507d12b8008cdc4387c0f15186844f7
   m_Children:
   - {fileID: -1406750320012088515}
+  - {fileID: 6616448550535937174}
   m_Volume: 59e4b294ec5648943985da03c104cd89
   m_Pitch: e3cddb6316c6eb74aa042a1e6728510d
   m_Send: 00000000000000000000000000000000
@@ -45,6 +46,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &-2115978285309334186
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1b17581922218394c9574ca06363cc47
+  m_EffectName: Attenuation
+  m_MixLevel: c47d3e2ff5c09ad448e7627d93073d18
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!243 &-1406750320012088515
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -120,6 +135,7 @@ AudioMixerController:
     - 8ec597b838be3234ba2201387b590f24
     - 6507d12b8008cdc4387c0f15186844f7
     - f412227ee482b854ea1141b78eb11ab5
+    - 9575f707160fc6a48a9f9bdac011171b
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -177,10 +193,11 @@ AudioMixerSnapshotController:
     691a42d4827b61842ae5b458d0fd0e17: -7452
     4567b43540a6fd14f9fc7b2a1b494427: -3023
     aa986b454e38d274a88681c3e15e59b5: 6.1
+    440d00c50f2bfe049943c1ab316383c4: -0.39762527
     bcabc776e7f84ba4ab8251e5f0551a05: -0.7045173
     4dbb1f5715dc72a43aa88da0030edaa9: 0.056
     0179d077c7d1afb44914b4938deda9eb: 71
-    8d90b0e7fbca24c44b3291e1be8e03d7: -11.944499
+    8d90b0e7fbca24c44b3291e1be8e03d7: -5.7224774
     f75f3509d81790b4f836fc09e6d688b9: 0.08
     2ad498b90a8651142977d5c6d5fa00da: -8826
     dce9b76a26dc68a4abade0327ea78160: 0
@@ -293,3 +310,22 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &6616448550535937174
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LevelTwoTones
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 9575f707160fc6a48a9f9bdac011171b
+  m_Children: []
+  m_Volume: 440d00c50f2bfe049943c1ab316383c4
+  m_Pitch: 001bee85a775825479144879c072807a
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -2115978285309334186}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
