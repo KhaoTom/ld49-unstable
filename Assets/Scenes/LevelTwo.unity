@@ -355,7 +355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.46619314
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.92460704
       objectReference: {fileID: 0}
     - target: {fileID: 3470091951625004662, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: pathController
@@ -411,7 +415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: stableDuration
-      value: 5.7
+      value: 3.96
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.a
@@ -419,15 +423,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.b
-      value: 0.3443396
+      value: 0.9340671
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.g
-      value: 0.8765816
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.r
-      value: 1
+      value: 0.89411765
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key1.b
@@ -443,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488696, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Name
-      value: LionTone
+      value: SkiesTone
       objectReference: {fileID: 0}
     - target: {fileID: 4517629614336589327, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_audioClip
@@ -456,11 +460,11 @@ PrefabInstance:
     - target: {fileID: 5785252402451392967, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2dd328b119d5536499a94ccdee8de6ce, type: 2}
+      objectReference: {fileID: 2100000, guid: c53606b02bf752646a229d404276b08b, type: 2}
     - target: {fileID: 6783579123343342390, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2dd328b119d5536499a94ccdee8de6ce, type: 2}
+      objectReference: {fileID: 2100000, guid: c53606b02bf752646a229d404276b08b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
 --- !u!4 &203871445 stripped
@@ -968,7 +972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
+      value: 0.8300319
       objectReference: {fileID: 0}
     - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
@@ -976,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.1573993
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3470091951625004662, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: moveSpeed
@@ -1036,7 +1040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: stableDuration
-      value: 7.71
+      value: 5.05
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.a
@@ -1044,27 +1048,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.b
-      value: 0.48625994
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
-      propertyPath: particleColorDrift.key0.g
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: particleColorDrift.key0.g
+      value: 0.7176471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.r
-      value: 0.3443396
+      value: 0.34509802
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key1.b
-      value: 0.745283
+      value: 0.003070495
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key1.g
-      value: 0
+      value: 0.50507087
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key1.r
-      value: 0.44212192
+      value: 0.6509434
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: drift.m_Curve.Array.data[1].time
@@ -1160,7 +1164,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488696, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Name
-      value: MonkeyTone
+      value: OceanParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517629614336589327, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: m_Volume
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4517629614336589327, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_audioClip
@@ -1173,11 +1181,11 @@ PrefabInstance:
     - target: {fileID: 5785252402451392967, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 32d5382f65141704ca445a7df9442f1b, type: 2}
+      objectReference: {fileID: 2100000, guid: 82fe80d6b9948204caf4967702a7fc23, type: 2}
     - target: {fileID: 6783579123343342390, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 32d5382f65141704ca445a7df9442f1b, type: 2}
+      objectReference: {fileID: 2100000, guid: 82fe80d6b9948204caf4967702a7fc23, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
 --- !u!4 &1184447459 stripped
@@ -1648,6 +1656,10 @@ PrefabInstance:
       propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 258785211681454634, guid: d42beb891239780498ed6eb939d61c9e, type: 3}
+      propertyPath: nextLevelBuildIndex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d42beb891239780498ed6eb939d61c9e, type: 3}
 --- !u!1001 &3211883286570519369
@@ -1764,47 +1776,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.size
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[0].text
-      value: Do not be alarmed.
+      value: These tones are the avatars of environs.
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[1].text
-      value: You are not hallucinating.
+      value: They are powerful!
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[2].text
-      value: Nor are you dead.
+      value: However they can quickly become instable.
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[3].text
-      value: This is a special place.
+      value: Do your best!
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[4].text
-      value: These tones are the avatars of the wilds.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
-      propertyPath: segments.Array.data[5].text
-      value: It's important that they remain stable!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
-      propertyPath: segments.Array.data[6].text
-      value: The fate of many worlds are at stake here!
-      objectReference: {fileID: 0}
-    - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
-      propertyPath: segments.Array.data[7].text
       value: Aim and fire the celestial tuning spork to stabilize the tones!
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
-      propertyPath: segments.Array.data[8].text
+      propertyPath: segments.Array.data[5].text
       value: Move around with arrow keys or WASD.
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
-      propertyPath: segments.Array.data[9].text
+      propertyPath: segments.Array.data[6].text
       value: Move the mouse to aim and left mouse button to fire!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
+      propertyPath: segments.Array.data[7].text
+      value: Begin!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
+      propertyPath: segments.Array.data[8].text
+      value: Begin!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
+      propertyPath: segments.Array.data[9].text
+      value: Begin!
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[10].text
@@ -1856,11 +1868,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[0].expression
-      value: worry
+      value: friendly2
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[1].expression
-      value: friendly1
+      value: surprise
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[2].expression
@@ -1868,7 +1880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[3].expression
-      value: friendly2
+      value: friendly1
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[4].expression
@@ -1876,7 +1888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[5].expression
-      value: worry
+      value: friendly2
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[6].expression
@@ -1884,15 +1896,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[7].expression
-      value: friendly1
+      value: devil
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[8].expression
-      value: friendly2
+      value: devil
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[9].expression
-      value: surprise
+      value: devil
       objectReference: {fileID: 0}
     - target: {fileID: 4151961790938016658, guid: a081c546309cd164594f418699e34c01, type: 3}
       propertyPath: segments.Array.data[10].expression
@@ -1973,11 +1985,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.29116774
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2974616803155422833, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
+      value: 0.5359211
       objectReference: {fileID: 0}
     - target: {fileID: 3470091951625004662, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: moveSpeed
@@ -2037,7 +2049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: stableDuration
-      value: 7.77
+      value: 5.57
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: drift.m_Curve.Array.size
@@ -2049,27 +2061,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key0.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
-      propertyPath: particleColorDrift.key0.g
-      value: 0.9788383
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
-      propertyPath: particleColorDrift.key0.r
-      value: 0.3254717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
-      propertyPath: particleColorDrift.key1.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: particleColorDrift.key0.g
+      value: 0.30450326
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: particleColorDrift.key0.r
+      value: 0.6981132
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: particleColorDrift.key1.b
+      value: 0.5568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key1.g
-      value: 0.25583032
+      value: 0.14940153
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: particleColorDrift.key1.r
-      value: 0.5566038
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488695, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: drift.m_Curve.Array.data[1].time
@@ -2177,7 +2189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517629613419488696, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_Name
-      value: ElephantTone
+      value: EarthTone
       objectReference: {fileID: 0}
     - target: {fileID: 4517629614336589327, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
       propertyPath: m_audioClip
@@ -2187,5 +2199,13 @@ PrefabInstance:
       propertyPath: OutputAudioMixerGroup
       value: 
       objectReference: {fileID: 6616448550535937174, guid: 711445fa1b229394380000ff76366c8e, type: 2}
+    - target: {fileID: 5785252402451392967, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18438945e0b94cd4c86f55727883ae01, type: 2}
+    - target: {fileID: 6783579123343342390, guid: 734e28bc302c24e42b01441557e196eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 18438945e0b94cd4c86f55727883ae01, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 734e28bc302c24e42b01441557e196eb, type: 3}

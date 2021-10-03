@@ -53,6 +53,13 @@ public class Scoring : MonoBehaviour
             onCompleteEvent.Invoke(new Score() { instability = instability, hits = hits });
             this.enabled = false;
         }
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            timeRemaining = 0f;
+        }
+#endif
     }
 
     private void OnEnable()

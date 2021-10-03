@@ -113,10 +113,12 @@ public class Conversation : MonoBehaviour
         if (speakers.TryGetValue(MakeSpeakerSpriteId(name, expression), out Sprite speakerSprite))
         {
             speakerImage.sprite = speakerSprite;
+            speakerImage.transform.parent.gameObject.SetActive(true);
         }
         else
         {
-            speakerImage.sprite = null;
+            speakerImage.enabled = false;
+            speakerImage.transform.parent.gameObject.SetActive(false);
         }
     }
 
